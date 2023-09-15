@@ -5,10 +5,20 @@ body{
 nav{
     background-color: darkslategrey;
     height: 60px;
+    box-shadow: 0px 0px 10px;
 }
 
 .NavList{
     display: flex;
+    background-color: darkslategrey;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.NavOption:first-child{
+    margin-left: 0.1rem;
+    margin-right: auto;
 }
 
 .NavOption a{
