@@ -1,0 +1,29 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+nav{
+    background-color: darkslategrey;
+    height: 60px;
+}
+
+.NavList{
+    display: flex;
+}
+
+.NavOption a{
+    color: white;
+}
+
+.NavOption a:hover{
+    color: rgb(102, 163, 232) ;
+}
+
+.NavBtn{
+    background-color: rgb(117, 150, 150);
+}
+
+img{
+    max-width: 85px;
+    height: auto;
+}
