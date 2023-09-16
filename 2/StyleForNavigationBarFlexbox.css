@@ -1,23 +1,29 @@
 body{
     font-family: "Montserrat", sans-serif;
     background-color: rgb(166, 225, 205);
+    margin: 0px; /*Fit@Make them touch to all side(left n right) of browser with no more space*/
+    height: 1000px;
 }
 
 nav{
-    margin: 0px;
-    padding: 0px;
-    background-color: rgb(70, 112, 112);
-    height: 60px;
     box-shadow: 0px 2px 10px;   /*left-right(-ve to +ve)*/
-    align-items: center;
+    align-content: center;
+        position: sticky;   /*Stick/ fixed the Navigation Bar on top evel when scrolled down*/
+        top: 0px;
+}
+
+nav ul{
+    margin: 0px; /*(no space upside)Make the upper side touch the upperbar in browser*/
+    text-align: center;
 }
 
 .NavList{
     display: flex;
-    background-color: darkslategrey;
+    background-color: rgb(70, 109, 109);
     justify-content: flex-end;  /*LeftRight control to the right*/
     align-items: center;    /*UpDown control to center*/
     list-style: none;   /*To erase the bullet style*/
+    padding: 10px 3px;
 }
 
 .NavOption{
@@ -35,18 +41,23 @@ nav{
 }
 
 .NavOption a:hover{
-    color: rgb(102, 163, 232) ;
+    color: rgb(111, 205, 161) ;
+    background-color: rgb(87, 128, 121);
+    padding: 8px;
+    margin: 0px;
+    border-radius: 5px 0px;
 }
 
 .NavBtn{
     background-color: rgb(117, 150, 150);
     border: none;
-    border-radius: 2px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 1rem 5px;
+    margin: 0px 1px;
 }
 
 img{
-    
-    max-width: 85px;
+    max-width: 130px;
     height: auto;
+    margin-left: 10px;
 }
