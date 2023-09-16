@@ -1,12 +1,12 @@
 body{
     font-family: "Montserrat", sans-serif;
-    background-color: rgb(166, 225, 205);
+    background-color: rgb(195, 234, 221);
     margin: 0px; /*Fit@Make them touch to all side(left n right) of browser with no more space*/
     height: 1000px;
 }
 
 nav{
-    box-shadow: 0px 2px 10px;   /*left-right(-ve to +ve)*/
+    box-shadow: 0px 2px 6px -2px rgb(123, 143, 136);   /*left-right(-ve to +ve), blur, spread@size*/
     align-content: center;
         position: sticky;   /*Stick/ fixed the Navigation Bar on top evel when scrolled down*/
         top: 0px;
@@ -19,15 +19,17 @@ nav ul{
 
 .NavList{
     display: flex;
-    background-color: rgb(70, 109, 109);
+    background-color: rgb(101, 150, 150);
     justify-content: flex-end;  /*LeftRight control to the right*/
     align-items: center;    /*UpDown control to center*/
     list-style: none;   /*To erase the bullet style*/
-    padding: 10px 3px;
+    padding: 4px 3px;
 }
 
 .NavOption{
     margin-right: 2rem;
+    margin: 0px;
+    padding-right: 10px;
 }
 
 .NavOption:first-child{     /*Choose the first item(Logo)*/
@@ -38,26 +40,62 @@ nav ul{
 .NavOption a{
     text-decoration: none;  /*To erase the underline*/
     color: white;
+    margin: 0px;
+    padding-right: 10px;
 }
 
 .NavOption a:hover{
     color: rgb(111, 205, 161) ;
     background-color: rgb(87, 128, 121);
-    padding: 8px;
+    padding: 10px;
     margin: 0px;
     border-radius: 5px 0px;
 }
 
-.NavBtn{
-    background-color: rgb(117, 150, 150);
+/* .NavBtn a{
+    background-color: rgb(124, 151, 151);
     border: none;
-    border-radius: 5px;
-    padding: 1rem 5px;
+    border-radius: 30px;
+    padding: 8px 8px;
     margin: 0px 1px;
+} */
+
+/* .NavBtn a:hover{
+    background-color: rgb(97, 111, 111);
+    border: none;
+} */
+
+button{
+    background-color: rgb(152, 187, 187);
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
 }
 
-img{
-    max-width: 130px;
-    height: auto;
-    margin-left: 10px;
+svg{
+    /* background-color: rgb(124, 151, 151); */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: none;
+    opacity: 0.65;
 }
+
+img.logoNav{
+    max-width: 85px;
+    height: auto;
+    margin-left: 6px;
+        filter: drop-shadow(1px 2px 5px rgb(85, 121, 121));
+        /*shadow for a non-box object with -> filter:drop-shadow(offset-x offset-y blur-radius color);*/
+}
+
+ /*Change behaviour when screen size adjusted*/
+ @media only screen and (max-width: 550px){
+    .NavOption{
+        visibility: hidden;
+    }
+
+    .NavOption:first-child{     /*Choose the first item(Logo)*/
+        visibility: visible;
+    }
+ }
