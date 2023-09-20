@@ -1,0 +1,35 @@
+body{
+    margin: 6px 6px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 3fr 1fr;
+    grid-area: "nav" "main" "footer";
+}
+
+nav{
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    text-align: center;
+    /*How to rotate text/ element */
+    -webkit-transform:rotate(90deg)
+}
+
+.NavBar{
+    background-color: aquamarine;
+    display: grid;
+    place-items: center;
+    width: 60px;
+}
+
+main{
+    background-color: cornflowerblue;
+    display: grid;
+    place-items: center;
+}
+
+.Advertisement{
+    background-color: darkgreen;
+    display: grid;
+    place-items: center;
+}
