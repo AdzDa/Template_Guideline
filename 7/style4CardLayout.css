@@ -109,7 +109,7 @@ body{
     }
 
     #Information{
-        display: grid;
+        /* display: grid; */
         padding: 1rem;
             background-color: rgb(250, 240, 240);
                 border-bottom-left-radius: 23px;
