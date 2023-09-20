@@ -1,0 +1,41 @@
+/* Tips (to center item in block; eg-text): 
+    Use display:grid in parent n child
+    then, add place-items: center in child */
+    
+body{
+    margin: 6px 6px;    
+    padding: 0px;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 6px;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
+    
+        text-align: center;
+}
+
+nav{
+    display: grid;
+    background-color: aquamarine;
+    height: 60px;
+    width: 100%;
+    place-items: center;
+}
+
+main{
+    display: grid;
+    background-color: coral;
+    width: 100%;
+    height: 100%;
+    place-items: center;
+}
+
+footer{
+    display: grid;
+    background-color: darkkhaki;
+    height: 60px;
+    width: 100%;
+    place-items: center;
+}
