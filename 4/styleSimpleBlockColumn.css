@@ -2,8 +2,11 @@ body{
     margin: 6px 6px;
     height: 100vh;
     display: grid;
-    grid-template-columns: auto 3fr 1fr;
-    grid-area: "nav" "main" "footer";
+    grid-template-rows: 1fr;
+    grid-template-columns: 60px 3fr 1fr;
+      /* Important!! Check the double quote below
+      If many columns in 1 row; only 1 closed double quote used */
+    grid-template-areas: "NavBar main Advertisement";
 }
 
 nav{
@@ -19,17 +22,20 @@ nav{
     background-color: aquamarine;
     display: grid;
     place-items: center;
-    width: 60px;
+    grid-area: NavBar;
+    /* width: 60px; */
 }
 
 main{
     background-color: cornflowerblue;
     display: grid;
     place-items: center;
+    grid-area: main;
 }
 
 .Advertisement{
     background-color: darkgreen;
     display: grid;
+    grid-area: Advertisement;
     place-items: center;
 }

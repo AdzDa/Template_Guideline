@@ -1,0 +1,70 @@
+.container{
+    height: 100vh;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 0.5fr;
+        grid-template-rows: 1fr 2fr 0.8fr;
+        grid-template-areas:    "nav nav nav"
+                                "SideContent main Advertisement"
+                                "Blog footer footer";
+        grid-gap: 6px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            text-align: center;
+}
+
+nav{
+    background-color: aqua;
+        grid-area: nav;
+        display: grid;
+        place-items: center;
+}
+
+#SideContent{
+    background-color: darkcyan;
+        grid-area: SideContent;
+        display: grid;
+        place-items: center;
+}
+
+main{
+    background-color: coral;
+        grid-area: main;
+        display: grid;
+        place-items: center;
+}
+
+#Advertisement{
+    background-color: darkolivegreen;
+        grid-area: Advertisement;
+        display: grid;
+        place-items: center;
+}
+
+#Blog{
+    background-color: rgb(122, 100, 93);
+        grid-area: Blog;
+        display: grid;
+        place-items: center;
+}
+
+footer{
+    background-color: cornflowerblue;
+        grid-area: footer;
+        display: grid;
+        place-items: center;
+}
+
+@media only screen and (max-width: 550px){
+    .container{
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 2fr 1fr 0.5fr 1fr 1fr;
+        grid-template-areas:    "nav"
+                                "main"
+                                "SideContent"
+                                "Advertisement"
+                                "Blog"
+                                "footer";
+    }
+}
