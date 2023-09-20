@@ -1,0 +1,54 @@
+body{
+    margin: 5px;
+    height: 100vh;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+}
+
+.container{
+    display: grid;
+    height: 100%;
+    grid-gap: 6px;
+    grid-template-columns: 0.5fr 2fr 0.8fr;
+    grid-template-rows: 0.8fr 2fr 0.5fr;
+    grid-template-areas:    "nav nav nav"
+                            "Blog main SideContent"
+                            "footer footer SideContent";
+}
+
+nav{
+    background-color: aquamarine;
+    grid-area: nav;
+    display: grid;
+    place-items: center;
+}
+
+#Blog{
+    background-color: burlywood;
+    grid-area: Blog;
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background-color: chocolate;
+    grid-area: main;
+    display: grid;
+    place-items: center;
+}
+
+#SideContent{
+    background-color: cornflowerblue;
+    grid-area: SideContent;
+    display: grid;
+    place-items: center;
+}
+
+footer{
+    background-color: darkcyan;
+    grid-area: footer;
+    display: grid;
+    place-items: center;
+}
