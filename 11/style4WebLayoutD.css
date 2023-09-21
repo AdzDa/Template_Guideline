@@ -1,0 +1,104 @@
+/* Global style */
+*{
+    margin: 0px;
+    padding: 0px;
+        /* By default: actual width or height of an element is calculated by adding the padding & border.
+        Means, the length not included in height/ width we specified. But, if we used
+        box-sizing:border-box. Then, the total height is as what specified n the padding is inside only*/
+        box-sizing: border-box;
+}
+
+/* body{
+    display: flex;
+    Remember that the direction of row n column means it will be stacked
+    left-to-right(sideByside) n top-bottom respectively. Cause, from regular
+    row; it was bring to the side in flex(2-direction) with 1 row only.
+    flex-direction: column;
+}
+
+#WrapperDiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    background-color: cadetblue;
+} */
+
+/* #logo{
+    display: flex;
+    flex-direction: row;
+}
+
+#Nav{
+    display: flex;
+    flex-direction: row;
+} */
+
+.Main{
+    height: 100vh;
+    margin: 6px 6px;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.8fr 1.5fr 0.3fr;
+    grid-template-areas:    "Nav"
+                            "main"
+                            "SubContent"
+                            "footer";
+}
+
+.NavBar{
+    background-color: darkgrey;
+        display: grid;
+        grid-area: Nav;
+}
+
+main{
+    background-color: darkgrey;
+    display: grid;
+    grid-area: main;
+}
+
+.SubContent{
+    background-color: darkgrey;
+        display: grid;
+        grid-area: SubContent;
+}
+
+footer{
+    background-color: darkgrey;
+        display: grid;
+        grid-area: footer;
+        place-items: center;
+}
+
+#main-Row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-content: center; */
+    /* place-items: center; */
+}
+
+[id ^= "main-Col-"]{
+    background-color: darkcyan;
+    /* flex: 1; */
+    /* margin: 6px; */
+    /* min-width: 100px; */
+    /* margin-right: 6px; */
+    /* flex: 1 1 auto; */
+}
+
+#main-Col-1{
+    flex: 1;
+}
+
+#main-Col-2{
+    flex: 1;
+}
+
+#main-Col-3{
+    flex: 1;
+}
+
